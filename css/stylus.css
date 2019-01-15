@@ -1,0 +1,248 @@
+
+@import url('https://fonts.googleapis.com/css?family=Major+Mono+Display');
+*,
+::before,
+::after {
+	box-sizing: border-box;
+}
+html {
+	font-size: 62.5%;
+}
+span {
+	color: black;
+	font-weight: bold;
+}
+.inicio_header {
+	background-image:url("../images/city-street.jpg");
+	background-attachment: local;
+	background-size: 100%;
+	object-fit: cover;
+	width: 100%;
+	height: 840px;
+	position: relative;
+	box-shadow:3px 15px 33px #888888;
+
+
+}
+.inicio_titulo {
+	padding: 3rem;
+	margin: 0;
+	text-decoration: none;
+	color: #fff;
+	font-size: 4rem;
+	font-family: 'Major Mono Display', monospace;
+}
+li {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+.inicio_navegacion {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+li,.inicio_menu {
+	list-style: none;
+	text-decoration: none;
+	display:inline;
+	background: none;
+	font-size: 2rem;
+	font-family: 'Major Mono Display', monospace;
+	font-weight: bold;
+	color: white;
+	padding: 15px;
+}
+.imagen_titular {
+	border-radius: 360px;
+	width: 20%;
+	height: 20%;
+	position: relative;
+	margin: 2% 40%;
+	filter: drop-shadow(3px 3px 5px #444);
+
+}
+.icons{
+	position: relative;
+	width: 5%;
+	margin-left: 30%;
+
+}
+.icon_posicion {
+	margin-left: 4%;
+}
+.subtitulo {
+	text-align: center;
+}
+
+
+.hero {
+	display: flex;
+	justify-content: center;
+}
+.articulo_principal {
+	padding: 20px;
+	padding-bottom: 30px;
+	width: 80%;
+	margin: -40px;
+	z-index: 999;
+	background-color: white;
+	display: inline-block;
+	border-radius: 5px;
+	box-shadow: 3px 20px 25px #888888;
+
+}
+#aboutme,
+#skills,
+#cursos-logrados {
+	font-size: 4rem;
+	font-family: 'Major Mono Display', monospace;
+	text-align: center;
+}
+
+.descripcion_aboutme {
+	font-size: 2rem;
+	color: #525252;
+	padding: 5rem;
+	/* border-bottom: 3px solid #00904f; */
+	border-radius: 10px;
+	line-height: 3rem;
+}
+.titulo_skills {
+	color: #1b2128;
+	margin-top: 150px;
+}
+.inicio_skills {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+.icon-skills {
+	width: 9%;
+	margin: 50px;
+}
+.icon_git {
+	margin-left: 15%;
+}
+.icon_javascript {
+	margin-left: 10%;
+}
+.icon_python {
+	margin-left: 10%;
+}
+.icon_reactjs {
+	width: 14%;
+	height: 5%;
+}
+.container-courses {
+	display: grid;
+	grid-template-columns: 1fr;
+	justify-content: center;
+	align-items: center;
+	grid-gap: 15px;
+	margin-left: 50px;
+}
+.container-images {
+	display: flex;
+	align-items: center;
+	flex-wrap: wrap;
+	justify-content: center;
+}
+.courses-imageContainer {
+	position: relative;
+	display: block;
+}
+.courses-experiences {
+	border-radius: 10px;
+	text-align: center;
+	font-size: 15px;
+	background: #f2f2f2;
+	top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+}
+
+.course-image {
+	width: 480px;
+	height: 300px;
+	border-radius: 10px;
+}
+
+.footer_contact {
+	background: #1a3340;
+	height: 300px;
+	margin-top: 100px;
+}
+#contact {
+	text-align: center;
+	font-size: 2rem;
+	color: #03e084;
+	padding: 30px;
+	font-family: 'Major Mono Display', monospace;
+}
+
+.input_nombre {
+	width: 45%;
+	font-size: 2rem;
+	margin-left: 20px;
+	padding: 5px;
+	height: 10%;
+	background: #1a3340;
+	border: none;
+	border-bottom: 2px solid #007d3d;
+	border-radius: 9px;
+	color: #fff;
+}
+.input_mensaje {
+	margin-top: 50px;
+	margin-left: 28%;
+}
+::-webkit-input-placeholder {
+	color: #03e084;
+}
+.enviar_icon {
+	width: 8rem;
+	height: 50px;
+	margin-left:46.5%;
+	margin-top: 2.5rem;
+}
+.enviar_image {
+	width: 50px;
+	margin-top: 15px;
+}
+.footer {
+	background: #1d252c;
+	color: #fff;
+	height: 65px;
+	display: flex;
+	align-items: center;
+	justify-content: space-around;
+}
+.footer p {
+	font-size: 20px;
+}
+
+.social_link {
+	width: 30px;
+	height: 30px;
+	flex-shrink: 0;
+	display: inline-flex;
+	background-size: 30px 30px;
+	margin: 0 20px;
+}
+
+.social_link.instagram {
+	background-image: url("../images/instagram.svg");
+}
+
+.social_link.twitter {
+	background-image: url("../images/twitter.svg");
+}
+.social_link.github {
+		background-image: url("../images/github.svg");
+}
+.social_link.facebook {
+		background-image: url("../images/facebook.svg");
+}

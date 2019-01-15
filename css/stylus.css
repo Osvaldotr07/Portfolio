@@ -24,6 +24,10 @@ span {
 
 
 }
+.logo-title {
+	width: 80px;
+	height: 50px;
+}
 .inicio_titulo {
 	padding: 3rem;
 	margin: 0;
@@ -31,11 +35,6 @@ span {
 	color: #fff;
 	font-size: 4rem;
 	font-family: 'Major Mono Display', monospace;
-}
-li {
-	display: flex;
-	justify-content: space-between;
-	align-items: center;
 }
 .inicio_navegacion {
 	display: flex;
@@ -195,6 +194,9 @@ li,.inicio_menu {
 	border-radius: 9px;
 	color: #fff;
 }
+.correo {
+	margin-left: 100px;
+}
 .input_mensaje {
 	margin-top: 50px;
 	margin-left: 28%;
@@ -212,6 +214,16 @@ li,.inicio_menu {
 	width: 50px;
 	margin-top: 15px;
 }
+.button-contact {
+	width: 100px;
+	height: 30px;
+	color: white;
+	border: 2px solid #007d3d;
+	background: #1a3340;
+	font-size: 20px;
+	border-radius: 5px;
+}
+
 .footer {
 	background: #1d252c;
 	color: #fff;

@@ -8,26 +8,24 @@
 html {
 	font-size: 62.5%;
 }
+body {
+	background: red;
+}
 span {
 	color: black;
 	font-weight: bold;
 }
 .inicio_header {
 	background-image:url("../images/city-street.jpg");
-	background-attachment: local;
 	background-size: 100%;
-	object-fit: cover;
+	overflow: hidden;
 	width: 100%;
+	object-fit: cover;
 	height: 840px;
-	position: relative;
 	box-shadow:3px 15px 33px #888888;
 
+}
 
-}
-.logo-title {
-	width: 80px;
-	height: 50px;
-}
 .inicio_titulo {
 	padding: 3rem;
 	margin: 0;
@@ -39,6 +37,7 @@ span {
 .inicio_navegacion {
 	display: flex;
 	justify-content: space-between;
+	flex-wrap: wrap;
 	align-items: center;
 }
 
@@ -56,9 +55,9 @@ li,.inicio_menu {
 .imagen_titular {
 	border-radius: 360px;
 	width: 20%;
-	height: 20%;
+	margin: 0;
 	position: relative;
-	margin: 2% 40%;
+	margin: 1% 40%;
 	filter: drop-shadow(3px 3px 5px #444);
 
 }
@@ -113,6 +112,11 @@ li,.inicio_menu {
 	margin-top: 150px;
 }
 .inicio_skills {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+.images_skills  {
 	display: flex;
 	justify-content: center;
 	align-items: center;
@@ -218,9 +222,9 @@ li,.inicio_menu {
 	width: 100px;
 	height: 30px;
 	color: white;
-	border: 2px solid #007d3d;
-	background: #1a3340;
+	background: transparent;
 	font-size: 20px;
+	border-color: #03e084;
 	border-radius: 5px;
 }
 
@@ -257,4 +261,23 @@ li,.inicio_menu {
 }
 .social_link.facebook {
 		background-image: url("../images/facebook.svg");
+}
+@media screen and (max-width: 2000px){
+
+}
+@media screen and (max-width: 1024px){
+
+}
+@media screen and (max-width: 768px){
+
+}
+@media screen and (max-width: 480px){
+	.inicio_header {
+		overflow: hidden;
+		width: 100%;
+		height: auto;
+	}
+}
+@media screen and (max-width: 320px){
+
 }

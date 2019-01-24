@@ -9,6 +9,7 @@
 		<link rel="icon" type="images/png" href="images/ot3.png">
 	</head>
 	<body>
+		<i class="icon-menu burger-button" id="burger-menu"></i>
 		<header class="inicio_header">
 			<nav class="inicio_navegacion">
 				<h1 class="inicio_titulo" ><a class="inicio_titulo" href="#AboutMe">Osvaldo Trejo</a></h1>
@@ -19,16 +20,16 @@
 					<li><a class="inicio_menu" href="#">Blog</a></li>
 				</ul>
 			</nav>
-			<figure>
+			<figure class="container_titular">
 				<img class="imagen_titular" src="../images/oso.jpg" alt="Mi imagen">
 			</figure>
 			<h3 class="inicio_titulo subtitulo">Programador Full stack jr</h3>
-			<figure>
-				<a href="https://www.instagram.com/osvaldocrew/" target="_blank"><img class="icons" src="../images/instagram.png" alt="instagram"></a>
-				<a href="https://www.facebook.com/osvaldo.trejo.77" target="_blank"><img class="icons icon_posicion" src="../images/icon2.png" alt="facebook" target="_blank"></a>
-				<a href="https://github.com/Osvaldotr07" target="_blank"><img class="icons icon_posicion" src="../images/icon3.png" alt="github"></a>
-				<a href="https://twitter.com/Osvaldo21580323" target="_blank"><img class="icons icon_posicion"src="../images/icon4.png" alt="twitter"></a>
-				<a href="https://www.linkedin.com/in/osvaldo-trejo-622093148/" target="_blank"><img class="icons icon_posicion" src="../images/icon5.png" alt="linkedin"></a>
+			<figure class="container-icons">
+				<a href="https://www.instagram.com/osvaldocrew/" target="_blank"><img class="icons icons_posicion" src="../images/instagram.png" alt="instagram"></a>
+				<a href="https://www.facebook.com/osvaldo.trejo.77" target="_blank"><img class="icons icons_posicion" src="../images/icon2.png" alt="facebook" target="_blank"></a>
+				<a href="https://github.com/Osvaldotr07" target="_blank"><img class="icons icons_posicion" src="../images/icon3.png" alt="github"></a>
+				<a href="https://twitter.com/Osvaldo21580323" target="_blank"><img class="icons icons_posicion"src="../images/icon4.png" alt="twitter"></a>
+				<a href="https://www.linkedin.com/in/osvaldo-trejo-622093148/" target="_blank"><img class="icons icons_posicion" src="../images/icon5.png" alt="linkedin"></a>
 			</figure>
 		</header>
 		<section class="hero">
@@ -38,9 +39,9 @@
 
 				</div>
 		</section>
-		<section class="conteiner_skills">
-			<h3 id="skills" class="titulo_skills">skills</h3>
+		<section class="container_skills">
 			<article class="inicio_skills">
+				<h3 id="skills" class="titulo_skills">skills</h3>
 				<figure class="images_skills">
 					<img class="icon-skills icon_git" src="../images/git.png" alt="">
 					<img class="icon-skills icon_javascript" src="../images/javascript.png" alt="javascripticon">
@@ -49,45 +50,20 @@
 				</figure>
 			</article>
 		</section>
-		<h3 id="cursos-logrados">Cursos Completados</h3>
 		<section class="container-courses">
-			<div class="container-images gallery">
-				<div class="courses-experiences ">
-					<figure class="courses-imageContainer">
-						<img src="images/cursos-image/curso-profesional.png" alt="" class="course-image">
-					</figure>
-				</div>
-				<div class="courses-experiences">
-					<figure class="courses-imageContainer">
-						<img src="images/cursos-image/css-grid-loyoud.png" alt="" class="course-image">
-					</figure>
-				</div>
-				<div class="courses-experiences">
-					<figure class="courses-imageContainer">
-						<img src="images/cursos-image/ingieneria-software.png" alt="" class="course-image">
-					</figure>
-				</div>
-				<div class="courses-experiences">
-					<figure class="courses-imageContainer">
-						<img src="images/cursos-image/marca-personal.png" alt="" class="course-image">
-					</figure>
-				</div>
-			</div>
-		</section>
 		<section class="footer_contact">
-			<form class="footer-form" action="index.html" method="post">
-				<h3 id="contact">Contact</h3>
-				<input type="text" name="Nombre" value="" placeholder="Nombre" id="id_nombre" class="input_nombre">
-			<input class="input_nombre correo"type="text" name="Correo" value="" placeholder="Correo">
-			<input class="input_nombre input_mensaje" type="text" name="Mensaje" value="" placeholder="Descripción">
-			<div class="enviar_icon">
-				<button class="button-contact"type="button" name="button">Enviar</button>
-				<!-- <img class="enviar_image" src="../images/enviar.png" alt="" onclick="enviarContacto()"> -->
+			<div class="container">
+				<form class="footer-form" action="index.html" method="post">
+						<p>¿Creemos algo juntos?</p>
+					<input class="input_nombre correo"type="text" name="Correo" value="" placeholder="Dejame tu email">
+					<div class="enviar_icon">
+					<button class="button-contact"type="button" name="button">Go</button>
+				</div>
+				</form>
 			</div>
-			</form>
 		</section>
 		<footer class="footer">
-			<p>¿Creemos algo juntos?</p>
+			<p>@Osvaldo Trejo</p>
 				<div class="social">
 					<a href="https://www.instagram.com/osvaldocrew/" class="social_link instagram" ></a>
 					<a href="https://twitter.com/Osvaldo21580323" class="social_link twitter"></a>
@@ -95,5 +71,8 @@
 					<a href="https://www.facebook.com/osvaldo.trejo.77" class="social_link facebook"></a>
 				</div>
 		</footer>
+		<script type="text/javascript" src="js/interactividad.js">
+
+		</script>
 	</body>
 </html>

@@ -97,6 +97,13 @@ li,.inicio_menu {
 	font-weight: bold;
 	color: white;
 	padding: 15px;
+	-moz-transition-duration: .5s;
+	-webkit-transition-duration: .3s;
+}
+
+.inicio_menu:hover {
+	transform: scale(2);
+	color: rgba(255, 255, 255, 0.8);
 }
 .imagen_titular {
 	border-radius: 360px;
@@ -119,8 +126,12 @@ li,.inicio_menu {
 	position: relative;
 	width: 30%;
 	align-self: center;
+	transition: .5s;
+}
 
-
+.icons:hover {
+	width: 33%;
+	transform: rotate(-25deg);
 }
 .icons_posicion {
 	margin-left: 35%;
@@ -197,7 +208,7 @@ li,.inicio_menu {
 
 .footer_contact {
 	background: #1a3340;
-	height: 150px;
+	height: 180px;
 	margin-top: 30px;
 	display: flex;
 	flex-wrap: wrap;
@@ -235,6 +246,7 @@ li,.inicio_menu {
 ::-webkit-input-placeholder {
 	color: #000;
 }
+
 .button-contact {
 	width: 100px;
 	height: 30px;
@@ -262,7 +274,7 @@ li,.inicio_menu {
 .footer {
 	background: #1d252c;
 	color: #fff;
-	height: 65px;
+	height: 50px;
 	display: flex;
 	align-items: center;
 	justify-content: space-around;
@@ -295,7 +307,7 @@ footer p {
 }
 
 @media screen and (max-width: 1024px){
-	
+
 }
 @media screen and (max-width: 767px){
 

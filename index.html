@@ -5,13 +5,14 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1">
 		<title>Hola! Soy Osvaldo Trejo</title>
 		<link rel="stylesheet" href="css/stylus.css">
+		<link rel="stylesheet" href="/css/overlay.css">
 		<link rel="stylesheet" href="css/normalize.css">
 		<link rel="icon" type="images/png" href="images/ot3.png">
 	</head>
 	<body>
-		<i class="icon-menu burger-button" id="burger-menu"></i>
+		<i class="icon-menu burger-button" id="menu-button"></i>
 		<header class="inicio_header">
-			<nav class="inicio_navegacion">
+			<nav class="inicio_navegacion active" id="inicio_navegacion">
 				<h1 class="inicio_titulo" ><a class="inicio_titulo " href="#AboutMe">Osvaldo Trejo</a></h1>
 				<ul>
 					<li><a class="inicio_menu" href="#aboutme">About Me</a></li>
@@ -31,6 +32,9 @@
 				<a href="https://twitter.com/Osvaldo21580323" target="_blank"><img class="icons icons_posicion"src="../images/icon4.png" alt="twitter"></a>
 				<a href="https://www.linkedin.com/in/osvaldo-trejo-622093148/" target="_blank"><img class="icons icons_posicion" src="../images/icon5.png" alt="linkedin"></a>
 			</figure>
+				<div class="wave a"></div>
+				<div class="wave b"></div>
+				<div class="wave c"></div>
 		</header>
 		<section class="hero">
 				<div class="articulo_principal">
@@ -53,12 +57,19 @@
 		<section class="container-courses">
 		<section class="footer_contact">
 			<div class="container">
-				<form class="footer-form" action="index.html" method="post">
-						<p>¿Creemos algo juntos?</p>
-					<input class="input_nombre correo"type="text" name="Correo" value="" placeholder="Dejame tu email">
+				 <form class="footer-form">
+							<p>¿Creemos algo juntos?</p>
+							<div class="overlay active" id="overlay">
+								<div class="modal" id="modal">
+									<h1>Gracias por enviar tus datos</h1>
+									<p>Gracias! Por enviar tus datos en un momento me pongo en contacto contigo</p>
+									<button class="button-contact" id="button-accept">Aceptar</button>
+								</div>
+							</div>
+						<input class="input_nombre correo"type="text"  value="" 		placeholder="Dejame tu email">
 					<div class="enviar_icon">
-					<button class="button-contact"type="button" name="button">Go</button>
-				</div>
+						<button class="button-contact" id="button-contact">Go</button>
+					</div>
 				</form>
 			</div>
 		</section>
@@ -71,8 +82,6 @@
 					<a href="https://www.facebook.com/osvaldo.trejo.77" class="social_link facebook"></a>
 				</div>
 		</footer>
-		<script type="text/javascript" src="js/interactividad.js">
-
-		</script>
+		<script type="text/javascript" src="js/interactividad.js"></script>
 	</body>
 </html>

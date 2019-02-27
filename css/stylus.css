@@ -1,4 +1,5 @@
 
+/*Hoja de estilos de la pagina principal*/
 @import url('https://fonts.googleapis.com/css?family=Major+Mono+Display');
 @font-face {
   font-family: 'icomoon';
@@ -53,27 +54,65 @@ html {
 	display: none;
 	top: 5px;
 	color: white;
+	border
 }
 span {
 	color: black;
 	font-weight: bold;
 }
 .inicio_header {
-	background-image:url("../images/street.jpg");
+	/*background-image:url("../images/street.jpg");*/
 	background-size: cover;
+	background: #0f9bf6;
 	-moz-background-size: cover;
   -webkit-background-size: cover;
   -o-background-size: cover;
 	overflow: hidden;
 	object-fit: cover;
-	height: 840px;
+	position: relative;
+	height: 110vh;
 	box-shadow:3px 15px 33px #888888;
-
 }
 
+.wave {
+	position: absolute;
+	background: url("../images/waves.png") center bottom no-repeat;
+	width: 2202px;
+	height:407px;
+	right: -195px;
+	animation: 5s wave infinite alternate ease-in-out
+}
+.wave {
+	position: absolute;
+	bottom: -100px;
+	height:407px;
+}
+.waves.b{
+	animation-delay: 6s;
+	background-position: 0 -527px;
+}
+.wave.c {
+	animation-delay: 2s;
+	background-position: 0 -854px;
+}
+.wave.a {
+	background-position: 0 0;
+}
+@keyframes wave{
+	from {
+		transform: translate(0,0);
+	}
+	50% {
+		transform: translate(-80px, 30px);
+	}
+	to {
+		transform: translate(160px, -60px);
+	}
+}
 .inicio_titulo {
 	padding: 3rem;
 	margin: 0;
+	z-index: 1;
 	text-decoration: none;
 	color: #fff;
 	font-size: 4rem;
@@ -83,6 +122,7 @@ span {
 	display: flex;
 	justify-content: space-between;
 	flex-wrap: wrap;
+	z-index: 1;
 	text-align: center;
 	align-items: center;
 }
@@ -107,8 +147,8 @@ li,.inicio_menu {
 }
 
 .imagen_titular {
-	animation-name: imagenTransparencia;
-	animation-duration: 3.5s;
+	animation:3.5s imagenTransparencia ease-in-out;
+
 	border-radius: 50%;
 	width: 300px;
 	position: relative;
@@ -143,7 +183,7 @@ li,.inicio_menu {
 	width: 30%;
 	align-self: center;
 	transition: .5s;
-
+	z-index: 10;
 }
 
 .icons:hover {
@@ -187,7 +227,7 @@ li,.inicio_menu {
 	width: 90%;
 	margin: -40px;
 	padding-bottom: 20px;
-	z-index: 999;
+	z-index: 2;
 	background-color: white;
 	display: flex;
 	justify-content: center;
@@ -279,6 +319,7 @@ li,.inicio_menu {
 	background-repeat: no-repeat;
 	background-position-y:center;
 	background-position-x:5px;
+	outline: 0;
 }
 ::-webkit-input-placeholder {
 	color: #000;
@@ -287,14 +328,23 @@ li,.inicio_menu {
 .button-contact {
 	width: 100px;
 	height: 30px;
-	margin-bottom:  30px;
-	background: none;
-	margin-top:10px;
-	display: block;
-	color: #fff;
-	font-size: 20px;
-	border-color: #fff;
+	text-align: center;
+	margin:10px auto;
+	font-size: 2em;
+	background: #7dc800;
+	color: white;
 	border-radius: 5px;
+	border: none;
+	outline: 0;
+	cursor: pointer;
+	transition: .2s;
+	padding-bottom: 10px;
+	will-change: transform;
+	box-shadow: 0 -.2em  rgba(0,0,0, .2) inset;
+}
+.button-contact:active {
+	background: #7dc800;
+	transform: scale(.9);
 }
 .container {
 	max-width: 1000px;
@@ -360,6 +410,26 @@ footer p {
 
 }
 @media screen and (max-width: 480px){
+	.inicio_navegacion {
+		background: rgba(0,0,0,.8);
+		position: fixed;
+		left: 0;
+		right: 0;
+		top: 0;
+		z-index: 999;
+		bottom: 0;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		text-align: center;
+		opacity: 0;
+		visibility: hidden;
+		transition: 1.1s ease-in;
+	}
+	.inicio_navegacion.active{
+			opacity: 1;
+			visibility: visible;
+	}
 	.imagen_titular {
 		width: 80%;
 	}

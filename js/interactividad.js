@@ -1,11 +1,7 @@
-const menu = document.querySelector(".inicio_navegacion");
-const burgerButton=document.querySelector("#burger-menu");
-
-function showMenu() {
-	if(menu.classList.contains("is-active")){
-		menu.classList.remove("is-active");
-	}
-	else {
-		menu.classList.add("is-active");
-	}
-}
+const $hideMenu = document.getElementById('menu-button');
+const $navegacionHide = document.getElementById('inicio_navegacion');
+const $showMenu = document.getElementById('menu-button');
+//Creamos el boton de responsive design del menu
+ $hideMenu.addEventListener('click', (event) =>{
+	 $navegacionHide.classList.toggle('active');
+});

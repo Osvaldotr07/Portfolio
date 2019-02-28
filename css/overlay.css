@@ -10,13 +10,13 @@
 	align-items: center;
 	justify-content: center;
 	text-align: center;
-	opacity: 1;
-	visibility: visible;
+	opacity: 0;
+	visibility: ;
 	transition: 1.1s ease-in;
 }
 .overlay.active {
-	opacity: 0;
-	visibility: hidden;
+	opacity: 1;
+	visibility: visible;
 }
 .modal {
 	max-width: 500px;
